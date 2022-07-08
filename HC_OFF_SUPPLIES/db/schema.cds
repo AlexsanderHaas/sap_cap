@@ -25,7 +25,7 @@ entity Suppliers {
         phone      : String;
         building   : String;
         street     : String @multiline;
-        postycode  : String;
+        postcode   : String;
         city       : String;
         country    : String;
         products   : Composition of many Products
