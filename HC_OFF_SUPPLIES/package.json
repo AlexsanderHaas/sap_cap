@@ -9,14 +9,17 @@
     "@sap/cds": "^5",
     "@sap/hana-client": "^2.13.21",
     "express": "^4",
-    "hdb": "^0.18.3"
+    "hdb": "^0.18.3",
+    "@sap/hdbext": "^7.3.1",
+    "sap-hdbext-promisfied": "^2.202108.1"
   },
   "devDependencies": {
     "@sap/hdi-deploy": "4.4.1",
     "sqlite3": "^5.0.2"
   },
   "scripts": {
-    "start": "cds run"
+    "start": "cds run",
+    "build": "cds build/all --clean;cp gen/srv/srv/csn.json srv/gen/;cp -r gen/db/src/gen db/src"
   },
   "eslintConfig": {
     "extends": "eslint:recommended",
@@ -51,6 +54,7 @@
     },
     "hana": {
       "deploy-format": "hdbtable"
-    }
+    },
+    
   }
 }
