@@ -20,7 +20,8 @@
   },
   "scripts": {
     "start": "cds run",
-    "watch-productsoverview": "cds watch --open productsoverview/webapp/index.html?sap-ui-xx-viewCache=false"
+    "watch-productsoverview": "cds watch --open productsoverview/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-osfiori": "cds watch --open osfiori/webapp/index.html?sap-ui-xx-viewCache=false"
   },
   "eslintConfig": {
     "extends": "eslint:recommended",
@@ -61,6 +62,7 @@
     }
   },
   "sapux": [
-    "app/productsoverview"
+    "app/productsoverview",
+    "app/osfiori"
   ]
 }
